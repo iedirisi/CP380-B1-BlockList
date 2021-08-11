@@ -16,10 +16,10 @@ namespace CP380_B1_BlockList
                 new Payload("user", TransactionTypes.GRANT, 10, null), 
                 new Payload("user", TransactionTypes.BUY, 10, "10C"),
             };
-            int cnt = myChain.Chain.Count;
            
-            string prhash=JsonSerializer.Serialize(myChain.Chain[cnt-1].Hash);
-            var block = new Block(DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss tt"), prhash , data);
+           
+            
+            var block = new Block(DateTime.Now, "", data);
 
             myChain.AddBlock(block);
 
