@@ -34,9 +34,9 @@ namespace CP380_B1_BlockList.Models
             // TODO
          bool valid = true;
            
-            for (var x=1; x<Chain.Count; x++)
+            for (var x=1; x < Chain.Count; x++)
             {
-                if (Chain[x].PreviousHash != Chain[x - 1].Hash || !Chain[x].Hash.StartsWith("CC"))
+                if (Chain[x].PreviousHash != Chain[x - 1].Hash || !Chain[x].Hash.StartsWith("C"))
                 {
                     valid = false;
                     break;
